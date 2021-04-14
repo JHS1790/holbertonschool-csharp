@@ -1,0 +1,11 @@
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\netcoreapp2.1\2-replace_element.deps.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\netcoreapp2.1\2-replace_element.runtimeconfig.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\netcoreapp2.1\2-replace_element.runtimeconfig.dev.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\netcoreapp2.1\2-replace_element.dll
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\bin\Debug\netcoreapp2.1\2-replace_element.pdb
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.csprojAssemblyReference.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.csproj.CoreCompileInputs.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.AssemblyInfoInputs.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.AssemblyInfo.cs
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.dll
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\2-replace_element\obj\Debug\netcoreapp2.1\2-replace_element.pdb
