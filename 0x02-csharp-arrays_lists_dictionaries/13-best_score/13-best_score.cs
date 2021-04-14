@@ -11,7 +11,7 @@ class Dictionary
         int best_score_value = 0;
         foreach (KeyValuePair<string, int> pair in myList)
         {
-            if (best_score_value < pair.Value)
+            if (best_score_value <= pair.Value)
             {
                 best_score_key = pair.Key;
                 best_score_value = pair.Value;
