@@ -5,7 +5,7 @@ class Dictionary
 {
     public static string BestScore(Dictionary<string, int> myList)
     {
-        if (myList.Count == 0)
+        if (myList.Count == 0 || myList == null)
             return "None";
         string best_score_key = "Adam";
         int best_score_value = 0;
