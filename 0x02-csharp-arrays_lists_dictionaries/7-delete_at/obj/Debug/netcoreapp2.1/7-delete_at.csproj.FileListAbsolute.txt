@@ -1,0 +1,11 @@
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.deps.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.runtimeconfig.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.runtimeconfig.dev.json
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.dll
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\bin\Debug\netcoreapp2.1\7-delete_at.pdb
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.csprojAssemblyReference.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.csproj.CoreCompileInputs.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.AssemblyInfoInputs.cache
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.AssemblyInfo.cs
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.dll
+C:\Users\fidel\Documents\Holberton\holbertonschool-csharp\0x02-csharp-arrays_lists_dictionaries\7-delete_at\obj\Debug\netcoreapp2.1\7-delete_at.pdb
