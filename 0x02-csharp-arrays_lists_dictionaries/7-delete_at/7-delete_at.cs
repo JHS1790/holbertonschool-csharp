@@ -7,7 +7,7 @@ class List
     {
         if (myList == null)
             return null;
-        if (index >= myList.Count || index < 0)
+        if (index >= myList.Count - 1|| index < 0)
             {
                 Console.WriteLine("Index out of range");
                 return myList;
