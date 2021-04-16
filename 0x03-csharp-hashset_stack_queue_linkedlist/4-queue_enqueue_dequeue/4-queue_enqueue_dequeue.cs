@@ -16,7 +16,7 @@ class MyQueue
         }
         if (newItem != null)
             aQueue.Enqueue(newItem);
-        Console.WriteLine($"Queue contains {search}: {aQueue.Contains(search)}");
+        Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
         if (aQueue.Contains(search))
         {
             bool is_search = false;
