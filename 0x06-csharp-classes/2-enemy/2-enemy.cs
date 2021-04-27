@@ -2,6 +2,7 @@
 
 namespace Enemies
 {
+    ///<summary>Zombo wombo</summary>
     public class Zombie
     {
         public int health;
