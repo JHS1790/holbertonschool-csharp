@@ -4,7 +4,7 @@ namespace Enemies
 {
     public class Zombie
     {
-        public int health;
+        int health;
 
         public int GetHealth()
         {
