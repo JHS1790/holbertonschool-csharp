@@ -10,7 +10,10 @@ namespace Enemies
         {
             return this.health;
         }
-
+        public Zombie()
+        {
+            this.health = 0;
+        }
         public Zombie(int value)
         {
             if (value < 0)
