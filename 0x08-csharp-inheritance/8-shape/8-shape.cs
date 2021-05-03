@@ -57,7 +57,9 @@ class Rectangle : Shape
 
 class Square : Rectangle
 {
+    ///S Q U A R E
     private int size;
+    ///<summary> B E H O L D I T S G L O R Y </summary>
     public int Size
     {
         get { return size; }
