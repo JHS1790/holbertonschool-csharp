@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Globalization;
 using System.Text;
 
+///<summary>an object</summary>
 class Obj
 {
     ///<summary>a method that prints the names of the available properties and methods of an object</summary>
