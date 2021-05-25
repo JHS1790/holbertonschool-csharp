@@ -9,7 +9,7 @@ class MatrixMath
 
 		double[,] rotation_matrix = new double[,] { { Math.Cos(angle), -(Math.Sin(angle)) }, { Math.Sin(angle), Math.Cos(angle) } };
 
-		return Math.Round(Multiply(matrix, rotation_matrix), 2);
+		return Multiply(matrix, rotation_matrix);
 	}
 
 	public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
@@ -24,7 +24,7 @@ class MatrixMath
 
 		for (int i = 0; i < columnLength; i++)
 			for (int j = 0; j < rowLength; j++)
-				answer[i, j] = DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j));
+				answer[i, j] = Math.Rounda(DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j)), 2);
 
 		return answer;
 	}
