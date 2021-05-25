@@ -1,12 +1,23 @@
 ﻿using System;
 
-namespace _24_matrix_shear_2D
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        double[,] matrix = { { 1, 2 }, { 3, 4 } };
+        double[,] result;
+        
+        result = MatrixMath.Shear2D(matrix, 'x', 2.2);
+        
+        for (int i = 0; i < result.GetLength(0); i++)
         {
-            Console.WriteLine("Hello World!");
+            for (int j = 0; j < result.GetLength(1); j++)
+            {
+                Console.Write(result[i, j]);
+                if (j != result.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
         }
     }
 }
