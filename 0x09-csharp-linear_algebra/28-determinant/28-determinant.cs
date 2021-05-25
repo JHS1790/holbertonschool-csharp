@@ -72,6 +72,6 @@ class MatrixMath
         }
     	Console.WriteLine("----------");
 		*/
-		return ( ( matrix[0,0] * Determinant2d(a) ) - ( matrix[0,1] * Determinant2d(b) ) - ( matrix[0,2] * Determinant2d(c) ) );
+		return ( ( matrix[0,0] * Determinant2d(a) ) - ( matrix[0,1] * Determinant2d(b) ) + ( matrix[0,2] * Determinant2d(c) ) );
 	}
 }
