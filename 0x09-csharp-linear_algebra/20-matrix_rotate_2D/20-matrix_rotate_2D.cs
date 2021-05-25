@@ -24,7 +24,7 @@ class MatrixMath
 
 		for (int i = 0; i < columnLength; i++)
 			for (int j = 0; j < rowLength; j++)
-				answer[i, j] = Math.Rounda(DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j)), 2);
+				answer[i, j] = Math.Round(DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j)), 2);
 
 		return answer;
 	}
