@@ -6,10 +6,46 @@ class MatrixMath
 	{
 		if (matrix.GetLength(0) != 2 || matrix.GetLength(1) != 2)
 			return new double[,] { { -1 } };
-
+			
 		double[,] rotation_matrix = new double[,] { { Math.Cos(angle), -(Math.Sin(angle)) }, { Math.Sin(angle), Math.Cos(angle) } };
 
+		double[] row1 = RowBuilder(matrix, 0);
+		double[] row2 = RowBuilder(matrix, 1);
+		double[,] row1a = new double[,] { { row1[0] } , { row1[1] } };
+		double[,] row2a = new double[,] { { row2[0] } , { row2[1] } };
+		double[,] row1b = Multiply(rotation_matrix, row1a);
+		double[,] row2b = Multiply(rotation_matrix, row2a);
+
+		double[,] answer = new double[,] { { row1b[0, 0], row1b[1, 0] } , { row2b[0, 0], row2b[1, 0] } };;
+/*
 		double[,] answer = Multiply(matrix, rotation_matrix);
+*/	
+		return answer;
+	}
+
+	public static double[,] Add(double[,] matrix1, double[,] matrix2)
+	{
+		if (matrix1.Length != 4 && matrix1.Length != 9)
+            return new double[,] { {-1} };
+		if (matrix1.Length != matrix2.Length)
+            return new double[,] { {-1} };
+
+		double[,] answer;
+
+		if (matrix1.Length == 4)
+		{
+			answer = new double[2,2];
+			for (int i = 0; i < 2; i++)
+				for (int j = 0; j < 2; j++)
+					answer[i,j] = matrix1[i,j] + matrix2[i,j];
+		}
+		else
+		{
+			answer = new double[3,3];
+			for (int i = 0; i < 3; i++)
+				for (int j = 0; j < 3; j++)
+					answer[i,j] = matrix1[i,j] + matrix2[i,j];
+		}
 		
 		return answer;
 	}
