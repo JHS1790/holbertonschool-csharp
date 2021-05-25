@@ -13,7 +13,7 @@ class MatrixMath
 
 		for (int i = 0; i < 2; i++)
 			for (int j = 0; j < 2; j++)
-				answer[i, j] = Math.Round(DotProduct(RowBuilder(matrix, i), ColumnBuilder(rotation_matrix, j)), 2);
+				answer[i, j] = Math.Round(DotProduct(RowBuilder(rotation_matrix, i), ColumnBuilder(matrix, j)), 2);
 
 		return answer;
 	}
