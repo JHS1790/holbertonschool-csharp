@@ -8,8 +8,9 @@ namespace _16_matrix_scalar_mul
     {
         double[,] matrix1 = { { 2, 3 }, { -1, 0 }};
         double[,] matrix2 = { { 1, 7 }, { -8, -2 } };
+        double scalar1 = 2;
 
-        PrintMatrix(MatrixMath.Multiply(matrix1, matrix2));
+        PrintMatrix(MatrixMath.MultiplyScalar(matrix1, scalar1));
     }
 
     static void PrintMatrix(double[,] matrix)
