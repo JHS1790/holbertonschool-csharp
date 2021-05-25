@@ -9,7 +9,12 @@ class MatrixMath
 
 		double[,] rotation_matrix = new double[,] { { Math.Cos(angle), -(Math.Sin(angle)) }, { Math.Sin(angle), Math.Cos(angle) } };
 
-		return Multiply(matrix, rotation_matrix);
+		double[,] row1 = new double[,] { { Multiply(RowBuilder(matrix, 0), rotation_matrix) } };
+		double[,] row2 = new double[,] { { Multiply(RowBuilder(matrix, 1), rotation_matrix) } };
+		
+		double[,] answer = new double[,] { { row1[0,0], row1[0,1] } , { row2[0,0], row2[0,1] } };
+
+		return answer;
 	}
 
 	public static double[,] Multiply(double[,] matrix1, double[,] matrix2)
