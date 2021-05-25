@@ -5,9 +5,9 @@ class MatrixMath
 	public static double Determinant(double[,] matrix)
 	{
 		if (matrix.Length == 4)
-			return Determinant2d(matrix);
+			return Math.Round(Determinant2d(matrix), 2);
 		else if (matrix.Length == 9)
-			return Determinant3d(matrix);
+			return Math.Round(Determinant3d(matrix), 2);
 		else
 			return -1;
 	}
