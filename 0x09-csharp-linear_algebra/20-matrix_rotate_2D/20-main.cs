@@ -1,20 +1,23 @@
 ﻿using System;
 
-static void Main(string[] args)
+class Program
 {
-    double[,] matrix = { { 1, 2 }, { 3, 4 } };
-    double[,] result;
-    
-    result = MatrixMath.Rotate2D(matrix, 2);
-
-    for (int i = 0; i < result.GetLength(0); i++)
+    static void Main(string[] args)
     {
-        for (int j = 0; j < result.GetLength(1); j++)
+        double[,] matrix = { { 1, 2 }, { 3, 4 } };
+        double[,] result;
+        
+        result = MatrixMath.Rotate2D(matrix, 2);
+
+        for (int i = 0; i < result.GetLength(0); i++)
         {
-            Console.Write(result[i, j]);
-            if (j != result.GetLength(1) - 1)
-                Console.Write(", ");
+            for (int j = 0; j < result.GetLength(1); j++)
+            {
+                Console.Write(result[i, j]);
+                if (j != result.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
     }
 }
