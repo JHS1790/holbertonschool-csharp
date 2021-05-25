@@ -5,10 +5,9 @@ class Program
     static void Main(string[] args)
     {
         double[,] matrix = { { 1, 2 }, { 3, 4 } };
-        double theta = -1.57;
         double[,] result;
-
-        result = MatrixMath.Rotate2D(matrix, theta);
+        
+        result = MatrixMath.Rotate2D(matrix, 1.57);
 
         for (int i = 0; i < result.GetLength(0); i++)
         {

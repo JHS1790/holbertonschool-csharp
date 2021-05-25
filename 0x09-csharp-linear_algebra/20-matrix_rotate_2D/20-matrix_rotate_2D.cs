@@ -17,7 +17,7 @@ class MatrixMath
 		double[,] row2b = Multiply(row2a, rotation_matrix);
 		
 		
-		double[,] answer = new double[,] { { row1b[0,0], row1b[0,1] } , { row2b[0,0], row2b[0,1] } };
+		double[,] answer = Multiply(row1b, row1a);
 
 		return answer;
 	}
