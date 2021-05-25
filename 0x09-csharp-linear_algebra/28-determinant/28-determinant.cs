@@ -12,12 +12,12 @@ class MatrixMath
 			return -1;
 	}
 
-	public double Determinant2d(double[,] matrix)
+	public static double Determinant2d(double[,] matrix)
 	{
 		return ((matrix[0, 0] * matrix[1, 1]) - (matrix[0, 1] * matrix[1, 0]));
 	}
 
-	public double Determinant3d(double[,] matrix)
+	public static double Determinant3d(double[,] matrix)
 	{
 		double[,] a = new double[,] { { matrix[1,1] , matrix[1,2] } , { matrix[2,1] , matrix[2,2] } };
 		double[,] b = new double[,] { { matrix[1,0] , matrix[1,2] } , { matrix[2,0] , matrix[2,2] } };
