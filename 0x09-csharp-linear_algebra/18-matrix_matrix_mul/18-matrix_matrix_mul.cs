@@ -23,7 +23,7 @@ class MatrixMath
 	{
 		double[] row = new double[matrix.GetLength(1)];
 		
-		for (int i = 0; i < matrix.GetLength(0); i++)
+		for (int i = 0; i < matrix.GetLength(1); i++)
 			row[i] = matrix[rowNumber, i];
 
 		return row;

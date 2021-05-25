@@ -4,24 +4,21 @@ class Program
 {
     static void Main(string[] args)
     {
-        double[,] matrix1 = { { 2, 3 }, { -1, 0 }};
-        double[,] matrix2 = { { 1, 7 }, { -8, -2 } };
+        double[,] matrix1 = { { 1, 2, 3 }, { -4, 5, 6 } };
+        double[,] matrix2 = { { -6, 1 }, { -3, 9 }, { 2, 4 } };
+        double[,] result;
 
-        PrintMatrix(MatrixMath.Multiply(matrix1, matrix2));
-    }
-    static void PrintMatrix(double[,] matrix)
-    {
-        int rowLength = matrix.GetLength(0);
-        int colLength = matrix.GetLength(1);
+        result = MatrixMath.Multiply(matrix1, matrix2);
 
-        for (int i = 0; i < rowLength; i++)
+        for (int i = 0; i < result.GetLength(0); i++)
         {
-            for (int j = 0; j < colLength; j++)
+            for (int j = 0; j < result.GetLength(1); j++)
             {
-                Console.Write(string.Format("{0} ", matrix[i, j]));
+                Console.Write(result[i, j]);
+                if (j != result.GetLength(1) - 1)
+                    Console.Write(", ");
             }
             Console.WriteLine();
         }
-        
     }
 }
