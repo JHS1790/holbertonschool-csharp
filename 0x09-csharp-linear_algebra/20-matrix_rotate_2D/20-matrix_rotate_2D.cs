@@ -8,7 +8,7 @@ class MatrixMath
 			return new double[,] { { -1 } };
 
 		double[,] rotation_matrix = new double[,] { { Math.Cos(angle), -(Math.Sin(angle)) }, { Math.Sin(angle), Math.Cos(angle) } };
-
+/*
 		double[] row1 = RowBuilder(matrix, 0);
 		double[] row2 = RowBuilder(matrix, 1);
 		double[,] row1a = new double[,] { { row1[0], row1[1] } };
@@ -16,9 +16,10 @@ class MatrixMath
 		double[,] row1b = Multiply(row1a, rotation_matrix);
 		double[,] row2b = Multiply(row2a, rotation_matrix);
 		
+		double[,] answer = new double[,] { { row1b[0,0], row1b[0,1] } , { row2b[0,0], row2b[0,1] } };
+*/
+		double[,] answer = Multiply(matrix, rotation_matrix);
 		
-		double[,] answer = Multiply(row1a, row1b);
-
 		return answer;
 	}
 
