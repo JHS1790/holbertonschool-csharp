@@ -7,7 +7,7 @@ class Program
         double[,] matrix = { { 1, 2 }, { 3, 4 } };
         double[,] result;
         
-        result = MatrixMath.Shear2D(matrix, 'x', 2.2);
+        result = MatrixMath.Shear2D(matrix, 'x', 2);
         
         for (int i = 0; i < result.GetLength(0); i++)
         {
