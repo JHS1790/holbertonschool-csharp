@@ -9,7 +9,7 @@ class MatrixMath
 
         double multicant = 1 / Determinant2d(matrix);
 
-        return Math.Round(MultiplyScalar(matrix, multicant), 2);
+        return MultiplyScalar(matrix, multicant);
     }
 
     public static double Determinant2d(double[,] matrix)
@@ -28,14 +28,14 @@ class MatrixMath
 			answer = new double[2,2];
 			for (int i = 0; i < 2; i++)
 				for (int j = 0; j < 2; j++)
-					answer[i,j] = matrix[i,j] * scalar;
+					answer[i,j] = Math.Round((matrix[i,j] * scalar), 2);
 		}
 		else
 		{
 			answer = new double[3,3];
 			for (int i = 0; i < 3; i++)
 				for (int j = 0; j < 3; j++)
-					answer[i,j] = matrix[i,j] * scalar;
+					answer[i,j] = Math.Round((matrix[i,j] * scalar), 2);
 		}
 
 		return answer;
