@@ -9,7 +9,9 @@ class MatrixMath
 
         double multicant = 1 / Determinant2d(matrix);
 
-        return MultiplyScalar(matrix, multicant);
+        double[,] inverse_step = new double[,] { { matrix[1,1] , -(matrix[0,1]) } , { -(matrix[1,0]) , matrix[0,0] } };
+
+        return MultiplyScalar(inverse_step, multicant);
     }
 
     public static double Determinant2d(double[,] matrix)
