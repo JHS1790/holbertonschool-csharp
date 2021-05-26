@@ -9,7 +9,7 @@ class MatrixMath
 
         double multicant = 1 / Determinant2d(matrix);
 
-        return MultiplyScalar(matrix, multicant);
+        return Math.Round(MultiplyScalar(matrix, multicant), 2);
     }
 
     public static double Determinant2d(double[,] matrix)
