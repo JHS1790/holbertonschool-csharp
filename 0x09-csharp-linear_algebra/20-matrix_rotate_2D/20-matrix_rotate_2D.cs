@@ -13,6 +13,41 @@ class MatrixMath
 		double[] row2 = RowBuilder(matrix, 1);
 		double[,] row1a = new double[,] { { row1[0] } , { row1[1] } };
 		double[,] row2a = new double[,] { { row2[0] } , { row2[1] } };
+		/*
+		for (int i = 0; i < rotation_matrix.GetLength(0); i++)
+        {
+            for (int j = 0; j < rotation_matrix.GetLength(1); j++)
+            {
+                Console.Write(rotation_matrix[i, j]);
+                if (j != rotation_matrix.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+        }
+		Console.WriteLine("----------");
+		for (int i = 0; i < row1a.GetLength(0); i++)
+        {
+            for (int j = 0; j < row1a.GetLength(1); j++)
+            {
+                Console.Write(row1a[i, j]);
+                if (j != row1a.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+        }
+		Console.WriteLine("----------");
+		for (int i = 0; i < row2a.GetLength(0); i++)
+        {
+            for (int j = 0; j < row2a.GetLength(1); j++)
+            {
+                Console.Write(row2a[i, j]);
+                if (j != row2a.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+        }
+		Console.WriteLine("----------");
+		*/
 		double[,] row1b = Multiply(rotation_matrix, row1a);
 		double[,] row2b = Multiply(rotation_matrix, row2a);
 
@@ -33,7 +68,26 @@ class MatrixMath
 
 		for (int i = 0; i < columnLength; i++)
 			for (int j = 0; j < rowLength; j++)
-				answer[i, j] = Math.Round(DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j)), 2);
+				answer[i, j] = DotProduct(RowBuilder(matrix1, i), ColumnBuilder(matrix2, j));
+
+		/*
+		for (int i = 0; i < answer.GetLength(0); i++)
+        {
+            for (int j = 0; j < answer.GetLength(1); j++)
+            {
+                Console.Write(answer[i, j]);
+                if (j != answer.GetLength(1) - 1)
+                    Console.Write(", ");
+            }
+            Console.WriteLine();
+        }
+		Console.WriteLine("----------");
+		*/
+
+		for (int i = 0; i < columnLength; i++)
+			for (int j = 0; j < rowLength; j++)
+				answer[i, j] = answer[i, j];
+
 
 		return answer;
 	}
@@ -67,8 +121,8 @@ class MatrixMath
 			interim_answer[i] = vector1[i] * vector2[i];
 
 		foreach (double part in interim_answer)
-			answer += part;
+			answer += Math.Round(part, 2);
 
-		return answer;
+		return Math.Round(answer, 2);
 	}
 }
