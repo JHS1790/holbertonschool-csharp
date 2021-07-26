@@ -3,8 +3,8 @@
 
 class Queue<T>
 {
-    public Type CheckType()
+    public string CheckType()
     {
-        return this.GetType();
+        return typeof(T).ToString();
     }
 }

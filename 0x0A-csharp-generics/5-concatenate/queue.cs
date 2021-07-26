@@ -16,9 +16,9 @@ class Queue<T>
             this.value = newValue;
         }
     }
-    public Type CheckType()
+    public string CheckType()
     {
-        return this.GetType();
+        return typeof(T).ToString();
     }
     public string Concatenate()
     {
