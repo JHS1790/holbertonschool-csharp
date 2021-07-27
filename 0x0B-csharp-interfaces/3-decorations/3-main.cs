@@ -12,5 +12,17 @@ class Program
         coffeeMug.Break();
         coffeeMug.Break();
         coffeeMug.Interact();
+
+        Console.WriteLine("\n----------------------------------\n");
+
+        Decoration figurine = new Decoration(durability: 10, isQuestItem: true);
+
+        Console.WriteLine(figurine.ToString());
+
+        figurine.Interact();
+        figurine.Break();
+        figurine.Break();
+        figurine.Interact();
+        Console.WriteLine("isQuestItem: " + figurine.isQuestItem);
     }
 }

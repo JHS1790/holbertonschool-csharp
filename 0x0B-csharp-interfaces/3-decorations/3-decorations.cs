@@ -36,13 +36,13 @@ class Decoration : Base, IInteractive, IBreakable
 			Console.WriteLine($"You look at the {this.name}. Not much to see here.");
 	}
 
-	public Decoration(string Name = "Decoration", int Durability = 1, bool QuestItem = false)
+	public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
 	{
-		if (Durability <= 0)
+		if (durability <= 0)
 			throw new Exception("Durability must be greater than 0");
-		this.name = Name;
-		this.durability = Durability;
-		this.isQuestItem = QuestItem;
+		this.name = name;
+		this.durability = durability;
+		this.isQuestItem = isQuestItem;
 	}
 }
 

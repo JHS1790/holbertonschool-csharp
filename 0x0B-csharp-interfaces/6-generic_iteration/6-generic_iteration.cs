@@ -37,13 +37,13 @@ class Decoration : Base, IInteractive, IBreakable
 			Console.WriteLine($"You look at the {this.name}. Not much to see here.");
 	}
 
-	public Decoration(string Name = "Decoration", int Durability = 1, bool QuestItem = false)
+	public Decoration(string name = "Decoration", int durability = 1, bool isQuestItem = false)
 	{
-		if (Durability <= 0)
+		if (durability <= 0)
 			throw new Exception("Durability must be greater than 0");
-		this.name = Name;
-		this.durability = Durability;
-		this.isQuestItem = QuestItem;
+		this.name = name;
+		this.durability = durability;
+		this.isQuestItem = isQuestItem;
 	}
 }
 
@@ -75,10 +75,10 @@ class Key : Base, ICollectable
 			Console.WriteLine($"You have already picked up the {this.name}.");
 	}
 
-	public Key(string Name = "Key", bool Collected = false)
+	public Key(string name = "Key", bool isCollected = false)
 	{
-		this.name = Name;
-		this.isCollected = Collected;
+		this.name = name;
+		this.isCollected = isCollected;
 	}
 }
 
