@@ -16,9 +16,9 @@ public delegate float CalculateModifier(float baseValue, Modifier modifier);
 
 class Player
 {
-	public string name;
+	private string name;
 
-	public float maxHp;
+	private float maxHp;
 	
 	public float hp;
 

@@ -26,9 +26,9 @@ class CurrentHPArgs : EventArgs
 
 class Player
 {
-	public string name;
+	private string name;
 
-	public float maxHp;
+	private float maxHp;
 	
 	public float hp;
 
