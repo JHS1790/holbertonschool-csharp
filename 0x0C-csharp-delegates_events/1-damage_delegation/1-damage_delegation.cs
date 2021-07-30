@@ -46,12 +46,12 @@ class Player
 	{
 		if (heal > 0)
 		{
-			Console.WriteLine($"{this.name} heals {heal} hp!");
+			Console.WriteLine($"{this.name} heals {heal} HP!");
 			this.hp += heal;
 		}
 		else
 		{
-			Console.WriteLine($"{this.name} heals 0 hp!");
+			Console.WriteLine($"{this.name} heals 0 HP!");
 		}
 	}
 }
